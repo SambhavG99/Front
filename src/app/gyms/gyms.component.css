@@ -1,0 +1,83 @@
+.carousel-inner .carousel-item {
+    height: 665px;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px;
+  }
+  #slider {
+    color: white; 
+    background-color:rgba(0,0,0,.5);
+  }
+   .main{ 
+     background-color: black;
+    /*background-image: url("../../assets/images/Parallax2.jpg");*/
+    /* Create the parallax scrolling effect 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+  }
+  .intro{
+    background: url(../../assets/images/bggyms.jpg) center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text{
+    color:white;
+    background: rgba(0, 0, 0,1);
+    mix-blend-mode:color-burn;
+    text-align: center;
+    font-weight: 800px;
+    padding: .5cm;
+  }
+
+  .main-1 {
+    margin-left: 0.2cm;
+    position: relative;
+    width: 50%;
+  }
+  
+  .img-unisex {
+    display: block;
+    width: 500px;
+    height: 750px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 750;
+    width: 501px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgba(0, 0, 0, 0.9);
+  }
+  
+  .main-1:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.fadeIn{
+  transition-delay:0.5s; 
+}
+ 

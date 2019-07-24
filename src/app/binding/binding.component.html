@@ -1,0 +1,17 @@
+<table class="table table-dark"
+    *ngIf='employees && employees.length'>
+    <thead>
+      <tr>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ='let employees of employees'>  
+          <td>{{employees.fname}}</td>     
+          <td>{{employees.lname}}</td>
+          <td>{{employees.age}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,80 @@
+<div class="Designing">
+    <br><br>
+    <h1 style="margin-left: 15cm;font-size: 80px; background-color: white; width: 14cm;">USER DETAILS</h1>
+    <br><br>
+
+    <!--Bootstrap Collapse used -->
+    <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 style="margin-left: 18cm;text-decoration: none;">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    CONFIDENTIAL DATA <b>ADMINS ONLY</b>
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <!--Bringing Data from Backend To FrontEnd -->
+                        <div class="row">
+                                <div class="col-3" *ngFor="let obj of arr">
+                                    <div class="card" style="width: 18rem; "  >
+                                            <img class="card-img-top"
+                                             src="../../assets/images/nopic.jpg" height="250px;" alt="Card image cap">
+                                            <div class="card-body" style="background-color: yellow;">
+                                                <h5 class="card-title"> NAME : {{obj.name}}</h5>
+                                                <p class="card-text">Email ID : {{obj.email}}</p>
+                                                <p class="card-text">Password : {{obj.password}}</p>
+                                                <p class="card-text">Weight : {{obj.weight}} kg</p>
+                                                <p class="card-text">Height :{{obj.height}} cm</p>
+                                                
+                             
+                                     <button type="submit"
+                                     [routerLink]="['/update',obj._id]">Update</button>
+                                            </div>
+                  <!--Ends here-->
+                                        </div>
+            </div>
+              
+              
+            </div>
+
+
+
+
+
+
+            
+     
+     
+     
+     
+     
+     
+     
+     
+            <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="{{obj._id}}" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,42 @@
+.imageContainer {
+    width:1585px; 
+    height:800px; 
+    background-image: url(../../assets/images/member.jpg);
+    background-size: cover; 
+}
+.imageContainer h1{
+    font-size: 100px;
+    margin-left:7cm;
+    color: white;
+}
+.onetext{
+    background-color: white;
+    width:800px;
+    height: 400px;
+    margin-left: 4cm;
+    margin-top: -5cm;
+    position: relative;
+}
+.btn{
+    border-radius: 0px;
+    color:black;
+    padding-left:80px;
+    padding-right:80px;
+    padding-top: 25px;
+    padding-bottom:25px;
+    margin-left: 11cm;
+    margin-top:-4cm;
+    position: relative;
+    font-size: 20px;
+}
+.twotext{
+    background-color: white;
+    width:600px;
+    height: 350px;
+    margin-left: 20cm;
+    margin-top: -5cm;
+    position: relative;
+}
+.fadeIn{
+    transition-delay:0.5s; 
+  }

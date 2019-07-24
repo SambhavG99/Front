@@ -1,0 +1,72 @@
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~bootstrap/dist/css/bootstrap.css';
+
+
+#first_article{
+    background-color: #f8ff00;
+}
+.btn-light {
+    color: #000;
+    background-color: #f8ff00;
+    border-color: #000;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:15cm;
+}
+.btn-dark{
+    color: #fff;
+    background-color:#000;
+    border-color: #000;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:14cm;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    border-color:black;
+    padding: 18px 70px;
+    font-size: 14px;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:2cm;
+}
+#link_bar{
+    display: inline;
+    }
+button{
+    margin-left: 4cm;
+}
+#content_1 .fadeIn{
+    animation-duration: 0.3s;
+    animation-delay: 0.1s;
+}
+.fadeIn {
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+  }
+  .fadeInUp{
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+  
+  }
+  .fadeInRight{
+    animation-duration:1s;
+    animation-delay: 1s;
+  
+  }
+  .fadeInLeft{
+    animation-duration:1.1s;
+    animation-delay: 1s;
+  
+  }
+  .shadow-lg{
+      margin-left: 3cm;
+  }  
+  #content_3 .fadeInUp{
+    animation-duration: 1s;
+    animation-delay: 0s;
+  }
+
+    

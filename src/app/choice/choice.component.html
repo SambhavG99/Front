@@ -1,0 +1,161 @@
+<section class="FadingIN" class="animated" animateOnScroll animationName="fadeIn">
+<div class="main_background">
+    <br>
+<h1> Choose Your Body Type </h1>
+<div class="row" >
+        <div class="col-md-2" style="margin-left: 13.3cm"><img src="../../assets/images/slim.jpg" height="150px" width="60px"> </div>
+        <div class="col-md-2" style="margin-left: -.4cm"><img src="../../assets/images/fit.jpg" height="150px" width="60px"> </div>
+        <div class="col-md-2" style="margin-left: -.7cm"><img src="../../assets/images/fat.jpg" height="150px" width="65px"> </div>
+    </div>
+
+    <div class="row" style="margin-top: 1cm;">
+        
+        <button type="button" class="btn btn-primary btn-lg" (click)="toggle()" style="margin-left: 13cm;">SLIM</button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#StayFit">FIT</button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#FatLoss">FAT</button>
+    </div>    
+    <br><br><br><br>
+
+    <ng-container *ngIf="show">
+        <div class="slim">
+            <table border="1" cellpadding="15px;" style="background-color: aqua;" >
+                <tr>
+                    <th>MEALS</th>
+                    <th>What To Eat To Gain Muscle Mass</th>
+                </tr>
+                <tr>
+                    <td>MEAL 1</td>
+                    <td>Oats With Apples</td>
+                </tr>
+                <tr>
+                    <td>MEAL 2</td>
+                    <td>- Whole Wheat bagel
+                        - Protein drink
+                        - 1sp Flex seed oil</td>
+                </tr>
+                <tr>
+                    <td>MEAL 3</td>
+                    <td>- Chicken breast
+                        - Large garden salad
+                        - Sweet potato</td>
+                </tr>
+                <tr>
+                    <td>MEAL 4</td>
+                    <td> Whole grain bread
+                        - peanut butter
+                        - Egg whites</td>
+                </tr>
+                <tr>
+                    <td>MEAL 5</td>
+                    <td>- Protein drink
+                        - Banana</td>
+                </tr>
+                <tr>
+                    <td>MEAL 6</td>
+                    <td>- Fish/tuna
+                        - Large garden salad
+                        - Plain fat free yogurt</td>
+                </tr>
+
+            </table>
+        </div>
+    </ng-container>
+
+
+    <div class="collapse" id="FatLoss">
+      
+        <table border="1" cellpadding="15px;" style="background-color:pink;" >
+            <tr>
+                <th>MEALS</th>
+                <th>What To Eat To Lose Fat</th>
+            </tr>
+            <tr>
+                <td>MEAL 1</td>
+                <td>- Whole grain cereals with apple
+                    - 5 egg whites 1 whole egg</td>
+            </tr>
+            <tr>
+                <td>MEAL 2</td>
+                <td>- Protein drink
+                    - Apple
+                    - Nuts</td>
+            </tr>
+            <tr>
+                <td>MEAL 3</td>
+                <td>- Chicken breast
+                    - Large garden salad with avacado</td>
+            </tr>
+            <tr>
+                <td>MEAL 4</td>
+                <td>- Strawberries, apple
+                    - 6 Egg whites</td>
+            </tr>
+            <tr>
+                <td>MEAL 5</td>
+                <td>- Protein drink
+                    - Banana
+                    </td>
+            </tr>
+            <tr>
+                <td>MEAL 6</td>
+                <td>- Fish/tuna
+                    - Large garden salad</td>
+            </tr>
+
+        </table>
+      
+    </div>
+
+    <div class="collapse" id="StayFit">
+      <div class="row">
+            <div class="col-md-1">  
+                <img src="../../assets/images/StayFit.png" height="350px" width="500px;">
+            </div>
+
+            <div class="col-md-8">
+        <table border="1" cellpadding="15px;" style="background-color:yellow;" >
+            <tr>
+                <th>MEALS</th>
+                <th>What To Eat To Stay Fit</th>
+            </tr>
+            <tr>
+                <td>MEAL 1</td>
+                <td>- Whole grain cereals with apple
+                    - 3 egg whites 1 whole egg</td>
+            </tr>
+            <tr>
+                <td>MEAL 2</td>
+                <td>- Protein drink
+                    - Apple
+                    - Nuts</td>
+            </tr>
+            <tr>
+                <td>MEAL 3</td>
+                <td>- Chicken breast
+                    - Brown rice or Pasta</td>
+            </tr>
+            <tr>
+                <td>MEAL 4</td>
+                <td>- 2 Slice of Whole grain bread with 1sp peanut butter
+                    - 3 Egg whites/td>
+            </tr>
+            <tr>
+                <td>MEAL 5</td>
+                <td>- Protein drink with milk
+                    - Large Banana
+                    </td>
+            </tr>
+            <tr>
+                <td>MEAL 6</td>
+                <td>- Fish/tuna
+                    - Large garden salad</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    </div>
+
+   
+</div>
+
+</section>

@@ -1,0 +1,27 @@
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;  
+    }
+  
+
+#main_nav{
+    background-color: black;
+    height:2.5cm ;
+    font-size: 18px;     
+}
+
+#nav1 li{
+    display:inline;
+    margin-right: 0.7cm;
+    font-family: 'Montserrat', sans-serif;
+    color:#cfcfcf;
+    font-weight: bold;
+}
+#first_article{
+    background-color: #f8ff00;
+}
+a:hover {
+    text-decoration: none;
+    
+}
