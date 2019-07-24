@@ -18,6 +18,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { MembershipComponent } from './membership/membership.component';
 import { ChoiceComponent } from './choice/choice.component';
 import { ViewComponent } from './view/view.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ViewComponent } from './view/view.component';
     JoinComponent,
     MembershipComponent,
     ChoiceComponent,
-    ViewComponent
+    ViewComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

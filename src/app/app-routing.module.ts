@@ -7,6 +7,7 @@ import { JoinComponent } from './join/join.component';
 import { MembershipComponent } from './membership/membership.component';
 import { ChoiceComponent } from './choice/choice.component';
 import { ViewComponent } from './view/view.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
  {path:'home',component:HomeComponent}, 
@@ -16,7 +17,7 @@ const routes: Routes = [
  {path:'join',component:JoinComponent},
  {path:'membership',component:MembershipComponent},
  {path:'choice',component:ChoiceComponent},
- {path:'view',component:ViewComponent}
+ {path:'login',component:LoginComponent}
 ];
 
 @NgModule({

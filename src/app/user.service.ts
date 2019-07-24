@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router'
 
  
 @Injectable({
@@ -8,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class UsersService {
  
   url = 'http://localhost:3000';
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router : Router) { }
   addData(name,email,password,weight,height) {
       const obj = {name,email,password,weight,height};
       this
@@ -60,4 +61,27 @@ export class UsersService {
         .post(`${this.url}/update/${id}`, obj)
         .subscribe(res => console.log('Done'));
       }
+
+signIn(email,password){
+  const obj = {email, password};
+  console.log(obj);
+  this
+    .http
+    .post(`${this.url}/signin`,obj)
+    .subscribe((res:any) => {
+      if(res.message){
+        alert(res.message);
+      }
+      else{
+
+        this.router.navigateByUrl(`/choice`);
+      }
+    });
+}
+getDataById(id){
+  return this
+    .http
+    .get(`${this.url}/getbyid/${id}`);
+}
+
 }
