@@ -1,0 +1,23 @@
+<div class="styling">
+
+    <br><Br><br><br><br><Br><Br><br><br>
+        <div class="transbg" style="background-color:rgba(256,256,256,0.6); height: 40%; ">
+            <br>
+            <h1 style="text-align: center;">ADMIN LOGIN</h1>
+                <Br>
+    <div class="col-lg-4 offset-lg-3" style=" margin-left:14cm ;">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4"><b>Email</b></label>
+                    <input type="email" class="form-control" id="inputEmail4" [(ngModel)]="email" placeholder="Email" name="email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4"><b>Password</b></label>
+                    <input type="password" class="form-control" id="inputPassword4" [(ngModel)]="password" placeholder="Password" name="password">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" (click)="signInAdmin()">Sign in</button>
+        </form>
+    </div>
+    </div>

@@ -19,6 +19,7 @@ import { MembershipComponent } from './membership/membership.component';
 import { ChoiceComponent } from './choice/choice.component';
 import { ViewComponent } from './view/view.component';
 import { LoginComponent } from './login/login.component';
+import { AloginComponent } from './alogin/alogin.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { LoginComponent } from './login/login.component';
     MembershipComponent,
     ChoiceComponent,
     ViewComponent,
-    LoginComponent
+    LoginComponent,
+    AloginComponent
   ],
   imports: [
     BrowserModule,

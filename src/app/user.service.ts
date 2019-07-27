@@ -67,7 +67,7 @@ signIn(email,password){
   console.log(obj);
   this
     .http
-    .post(`${this.url}/signin`,obj)
+    .post(`${this.url}/login`,obj)
     .subscribe((res:any) => {
       if(res.message){
         alert(res.message);
@@ -82,6 +82,28 @@ getDataById(id){
   return this
     .http
     .get(`${this.url}/getbyid/${id}`);
-}
+  }
+
+  signInAdmin(email,password){
+    const obj = {email, password};
+    console.log(obj);
+    this
+      .http
+      .post(`${this.url}/alogin`,obj)
+      .subscribe((res:any) => {
+        if(res.message){
+          alert(res.message);
+        }
+        else{
+  
+          this.router.navigateByUrl(`/view`);
+        }
+      });
+  }
+  getDataById1(id){
+    return this
+      .http
+      .get(`${this.url}/getbyid/${id}`);
+  }
 
 }
