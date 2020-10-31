@@ -6,6 +6,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+# ng new
+The Angular CLI makes it easy to create an application that already works, right out of the box. It already follows our best practices!
+
+# ng generate
+Generate components, routes, services and pipes with a simple command. The CLI will also create simple test shells for all of these.
+
+# ng serve
+Easily test your app locally while developing.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
